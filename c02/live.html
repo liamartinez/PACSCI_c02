@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>C02 Monitoring</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <style type="text/css">
+    body {
+      padding-top: 50px;
+    }
+    </style>
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/psc.css" type="text/css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="container">
+
+      <!-- Static navbar -->
+      <div class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a class="navbar-brand" href="home.html">Go Back</a></li>
+            <li><a href="carbonCycle.html">The Carbon Cycle</a></li>
+            <li><a href="CO2Monitoring.html">C02 Monitoring</a></li>
+            <li class="active"><a href="#">Live Data From The Space Needle</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+
+      <div class="row">
+        <div class="col-md-12"> 
+          <h3>Seattle's CO<sub>2</sub> Measured at the Space Needle</h3>
+        </div>
+      </div>
+
+    <div class="well">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                    Last 3 Days
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <small>
+                  This shows data collected every 5 minutes over the last 72 hours on the Space Needle. Variations in CO2 are related to human activities in and around the city (number of cars on the road, gas heating and cooking, etc.) as well as the local weather patterns (windy weather will blow locally produced CO2 away).
+                  </small>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                    This Month
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <small>This chart shows hourly averaged CO2 data collected over the last 30 days. The CO2 values over Seattle are higher and more variable because many of our daily activities such as cooking with gas or driving to work release CO2 into the atmosphere.</small>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                    Seasonal
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <small>This shows daily averaged data collected over the last few years. Having monitors in a major city and in an unpopulated area lets us compare how human activity and natural forces impact atmospheric CO2 levels.</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- col for collapse -->
+
+        <!-- live photo -->
+        <div class="col-md-5">
+          <img id ="livePic" class="resize" src="http://www.pmel.noaa.gov/co2/atm/psc/SN_72hrs.gif">
+        </div>
+
+      </div> <!-- row -->
+      <div class="row"></div>
+    </div> <!-- well -->
+
+     <div class="row">
+        <div class="col-md-12">
+                <p>
+                With monitors on the Space Needle and on a buoy off the Washington coast near Aberdeen, we can observe how our regional CO2 levels vary on a regular basis. 
+                </p>  
+                <p>
+                In February of 2010, scientists at NOAA's Pacific Marine Environmental Laboratory, in collaboration with the Pacific Science Center and Seattle's Space Needle, installed an instrument to measure how much CO<sub>2</sub> is in the air over Seattle. CO<sub>2</sub> is an important component of earth’s atmosphere because it absorbs and emits infrared radiation, resulting in a phenomenon known as the greenhouse effect. Cities are local hotspots for emissions resulting from human activities. In 2009, the global average CO<sub>2</sub> concentration in earth's atmosphere was about 0.0387% by volume, or 387 parts per million by volume (ppmv).
+                </p>
+        </div>
+      </div>
+
+    </div> <!-- container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="css/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      $('#collapseOne').on('show.bs.collapse', function() {
+        $('#livePic').attr('src', 'http://www.pmel.noaa.gov/co2/atm/psc/SN_72hrs.gif');
+      }); 
+      $('#collapseTwo').on('show.bs.collapse', function() {
+        $('#livePic').attr('src', 'http://www.pmel.noaa.gov/co2/atm/psc/SN_WA_hr_30day.gif');
+      }); 
+      $('#collapseThree').on('show.bs.collapse', function() {
+        $('#livePic').attr('src', 'http://www.pmel.noaa.gov/co2/atm/psc/SN_WA_seasonal.gif');
+      }); 
+
+    </script>
+
+
+  </body>
+</html>

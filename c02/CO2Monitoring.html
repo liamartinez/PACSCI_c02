@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>C02 Monitoring</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <style type="text/css">
+    body {
+      padding-top: 50px;
+    }
+    </style>
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/psc.css" type="text/css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="container">
+
+      <!-- Static navbar -->
+      <div class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a class="navbar-brand" href="home.html">Go Back</a></li>
+            <li><a href="carbonCycle.html">The Carbon Cycle</a></li>
+            <li class="active"><a href="C02Monitoring.html">C02 Monitoring</a></li>
+            <li><a href="live.html">Live Data From The Space Needle</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+
+      <div class="row">
+        <div class="col-md-12"> 
+          <h3>Fossil Fuel Emissions in Washington State</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-9">
+          <p>The Vulcan fossil fuel CO2 emissions inventory is constructed by researchers at Arizona State University. Here we show maps of the emissions from various activities for Washington State. The maps show the fossil fuel emissions in metric tons of carbon per year for each 10 km x 10 km box in the state.</p>
+        </div>
+        <div class="col-md-2">
+          <button type="button" class="btn btn-default pull-right" data-toggle="modal" data-target="#modLearn">Learn More</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <h4 class="text-center" >Power Plants</h4>
+          <img data-toggle="modal" data-target="#modalPow" role="button" src="images/mapPowerPlant copy.png" >
+        </div>  
+        <div class="col-md-4">
+          <h4 class="text-center">Commercial</h4>
+          <img src="images/mapCommercial copy.png">
+        </div>  
+          <div class="col-md-4">
+          <h4 class="text-center">Industrial</h4>
+          <img src="images/mapIndustrial copy.png">
+        </div>  
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <h4 class="text-center">Residential</h4>
+          <img src="images/mapResidential copy.png">
+        </div>  
+        <div class="col-md-4">
+          <h4 class="text-center">Transportation</h4>
+          <img src="images/mapTransportation copy.png">
+        </div>  
+          <div class="col-md-4">
+          <h4 class="text-center">Total</h4>
+          <img src="images/mapTotal copy.png">
+        </div>  
+      </div>
+
+      <!-- modals -->
+      <div class="modal" id="modLearn">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                <h4 class="modal-title">Learn More</h4>
+              </div>
+              <div class="modal-body">
+                <img src="images/mapKey.png" class="pull-right" id="mapKey">
+                <p>These figures show that the largest sources of emissions in Washington State are cars, trucks and other mobile CO<sub>2</sub> sources. While a few individual power plants are large point sources of CO2 (see electricity production figure and note color scale), there are relatively few fossil fuel-powered electric generation plants in Washington so the net total source of CO<sub>2</sub> for power generation in Washington State is relatively low compared to other states. Note also that most of the emissions are associated with population centers (i.e., cities) or the roads connecting those cities. (Data published in 2009.)</p>
+
+              </div>
+              <div class="modal-footer">
+                <a href="#" data-dismiss="modal" class="btn">Close</a>
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+    </div> <!-- /container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="css/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

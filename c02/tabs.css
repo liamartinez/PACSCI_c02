@@ -1,0 +1,145 @@
+img {
+	display:block;
+}
+
+div {
+	display:block;
+	margin:0;
+	padding:0;
+}
+
+div.navbar {
+	position: fixed;
+	border: #999 solid 0px;
+	padding: 1em;
+	background-color: #eff0f0;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index:1000;
+}
+
+div.content {
+	border: #999 solid 0px;
+	padding: 1em;
+	margin-top:42px;
+}
+
+div.content table {
+	margin:0px auto;
+}
+
+div#interactiveContent {
+	border: #999 solid 0px;
+	width: 1137px;/*100%;*/
+	height: 640px;
+	margin:0px auto;
+}
+
+ol#toc {
+	height: 3em;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-family:"boton",Georgia,Serif;
+	font-size:x-small;
+}
+
+ol#toc a {
+	background: url(images/tabSimpleWide.gif) 100% 0;
+	color: #000;
+	float: left;
+	line-height:3em;
+	outline: none;
+	padding-right: 20px;
+	text-decoration: none;
+	font-family:"boton",Georgia,Serif;
+	font-size:x-small;
+}
+
+ol#toc li.current {
+	background-color: #000;
+	background-position: 0 -42px;
+	font-family:"boton",Georgia,Serif;
+	font-size:x-small;
+}
+
+ol#toc li.current a {
+	background-position: 100% -42px;
+	color: #000;
+	font-family:"boton",Georgia,Serif;
+	font-size:x-small;
+}
+
+ol#toc li {
+	background: #000 url(images/tabSimpleWide.gif);
+	float: left;
+	margin: 0 1px 0 0;
+	padding-left: 20px;
+	font-family:"boton",Georgia,Serif;
+	font-size:x-small;
+}
+
+h1 {
+	color: #000;
+	font-family:"Boton",Georgia,Serif;
+	font-size:x-large;
+}
+
+h2 {
+	color: #000;
+	font-family:"Boton",Georgia,Serif;
+	font-size:large;
+}
+
+p {
+	color: #000;
+	font-family:"Myriad", Helvetica, Arial, sans-serif;
+	font-size:small;
+	padding-right:40px;
+}
+
+p.center {
+	text-align:center;
+	padding-right:45px;
+}
+
+p.left {
+	text-align:left;
+	padding-left:33px;
+	padding-right:10px;
+}
+
+p.graph {
+	color: #000;
+	font-family:"Myriad", Helvetica, Arial, sans-serif;
+	font-size:small;
+}
+
+sub {
+	height: 0;
+	line-height: 1;
+	vertical-align: baseline;
+	position: relative;
+	top: .5ex;
+}
+
+
+
+.custom #buffer { height: 100px; }
+
+@font-face {
+	font-family: 'boton';
+	src: url('fonts/boton-medium.eot');
+	src: local('☺'), url('fonts/boton-medium.woff') format('woff'), url('fonts/boton-medium.ttf') format('truetype'), url('fonts/boton-medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Myriad';
+	src: url('fonts/MyriadPro-Regular.eot');
+	src: local('☺'), url('fonts/MyriadPro-Regular.woff') format('woff'), url('fonts/MyriadPro-Regular.ttf') format('truetype'), url('fonts/MyriadPro-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

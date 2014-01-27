@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>C02 Monitoring</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <style type="text/css">
+    body {
+      padding-top: 50px;
+    }
+    </style>
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="container">
+
+      <!-- Static navbar -->
+      <div class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a class="navbar-brand" href="#">Go Back</a></li>
+            <li><a href="#">The Carbon Cycle</a></li>
+            <li class="active"><a href="#">C02 Monitoring</a></li>
+            <li><a href="#">Live Data From The Space Needle</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+
+      <div class="row">
+        <div class="col-md-12"> 
+          <h3>hhh</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-9">
+                <p>
+                In February of 2010, scientists at NOAA's Pacific Marine Environmental Laboratory, in collaboration with the Pacific Science Center and Seattle's Space Needle, installed an instrument to measure how much CO<sub>2</sub> is in the air over Seattle. CO<sub>2</sub> is an important component of earth’s atmosphere because it absorbs and emits infrared radiation, resulting in a phenomenon known as the greenhouse effect. Cities are local hotspots for emissions resulting from human activities. In 2009, the global average CO<sub>2</sub> concentration in earth's atmosphere was about 0.0387% by volume, or 387 parts per million by volume (ppmv).
+                </p>
+
+        </div>
+        <div class="col-md-2">
+          <button type="button" class="btn btn-default pull-right" data-toggle="modal" data-target="#modLearn">Learn More</button>
+        </div>
+      </div>
+
+    </div> <!-- container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="css/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+       $('#pow').modal ({show:true});
+    </script>
+
+
+  </body>
+</html>
