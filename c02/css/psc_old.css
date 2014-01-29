@@ -92,47 +92,53 @@ from kuler theme: https://kuler.adobe.com/RemolinaEstrada-color-theme-3338205/ed
 	position: relative;
 }
 
-.cc-text {
-	margin-top: 30px;
-}
-
 #natural {
 	background: rgba(10, 145, 171, 1);
+	margin-right: 0px; 
+	overflow: hidden;
+	border-color: #FFC045;
+	border-right-style: solid;
+	border-width: 10px;
 	height:100%;
-	width: 100%;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-ms-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
 }
 
-.natureTitle {
+#natural.half {
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-ms-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
 	background: rgba(10, 145, 171, 1);
-	margin-right: 50%;
-	margin-top: 20px;
-	border-radius: 4px;
+	overflow: hidden; 
+	margin-right:50%;
 }
 
-#nature-title-text {
-	margin-left: 60px;
+#natural.slide {
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-ms-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	margin-right:85%;
 }
 
 #human {
 	background-color: #FFC045;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-ms-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
 	width: 100%;
-	top:135px;
+	top:50px;
 	position: absolute;
 	z-index: -1;
 	height:100%;
-}
-
-.humanTitle {
-	background-color: #FFC045;
-	margin-top: 20px;
-	margin-left: 52%;
-	border-radius: 4px;
-	position: absolute;
-	width: 48%;
-}
-
-#human-title-text {
-	margin-right: 60px;
 }
 
 #humanIcon {
@@ -147,8 +153,23 @@ from kuler theme: https://kuler.adobe.com/RemolinaEstrada-color-theme-3338205/ed
 #natIcon {
 	width: 40px;
 	height:auto;
-	margin-top: 36px;
+	vertical-align: bottom;
+	margin-top: 30px;
+}
+
+#learnHuman {
+	margin-top:220px;
+	margin-right: 20px;
+	margin-left: 10px;
+	z-index: 999;
+}
+
+#learnNatural {
+	margin-top: -500px;
 	margin-left: 20px;
+	margin-right: 10px;
+	z-index: 999;
+	position: absolute;
 }
 
 .cyclePic {
@@ -157,6 +178,14 @@ from kuler theme: https://kuler.adobe.com/RemolinaEstrada-color-theme-3338205/ed
 	display: block;
 	margin-left: auto;
 	margin-right:auto;
+}
+
+.hideMe {
+	visibility: hidden;
+}
+
+.showMe {
+	visibility: visible;
 }
 
 /* Preloader */
