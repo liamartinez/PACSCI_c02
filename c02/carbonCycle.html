@@ -24,7 +24,7 @@
     <div class="container">
 
       <!-- Static navbar -->
-      <div class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+      <div class="navbar navbar-custom navbar-fixed-top bs-docs-nav" role="banner">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -42,17 +42,92 @@
           </ul>
         </div><!--/.nav-collapse -->
       </div>
-
-      <div class="row">
-        <div class="col-md-12"> 
-          <h3>The Carbon Cycle</h3>
-        </div>
-      </div>
-
     </div> <!-- /container -->
+
+      <div id="human">
+        <div class="container" id="humanContent">
+          <div class="row">
+            <div class="col-md-12"> 
+              <h3 class="pageTitle pull-right">The Human-Influenced Cycle</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-5">
+              <p id="humP2" "text-right">Since the Industrial Revolution, we have fueled our activities with carbon, burning fossil fuels in factories, vehicles and power plants. This burning releases carbon into the air much faster than occurs naturally. Once there, the carbon changes the chemical makeup of </p>
+            </div>
+            <div class="col-md-5">
+              <p class = "text-right">By digging up and burning fossil fuels, we’re adding carbon to the atmosphere that would naturally be in storage. This steady increase in CO2 levels in the atmosphere changes the natural carbon cycle, which affects the global climate and the chemistry of the oceans. Once there, the carbon changes the chemical makeup of  </p>
+            </div>  
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img class="cyclePic" src="images/MainHumanGraphic_transp.png">
+            </div>
+          </div>
+        </div> <!-- end container -->
+      </div> <!-- end human -->
+
+<!--       <div  class="row">
+        <div class="col-md-9"></div>
+        <div class="col-md-3">
+          <button type="button" id="learnHuman" id="humBut" class="btn btn-primary btn-custom pull-right">Learn More</button>
+        </div>
+      </div> -->
+
+      <button type="button" id="learnHuman" class="btn btn-primary btn-custom pull-right">Learn More</button>
+
+      <div id="natural" class="half">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12"> 
+              <h3 class="pageTitle">The Natural Carbon Cycle</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5">
+              <p>People, animals and plants are made primarily of carbon. When living things breathe and whenever something burns, carbon is released into the atmosphere.People, animals and plants are made primarily of carbon. When living things breathe and whenever something burns, carbon is released into the atmosphere.</p>
+            </div>
+            <div class="col-md-5">
+              <p id="natP2">When living things die and decay, carbon is released and joins carbon stored in the soil and oceans. Vast amounts of carbon are in deep storage in the form of fossilized plants and animals.</p>
+            </div>  
+          </div>
+<!--           <div class="row">
+            <div class="col-md-3">
+              <button type="button" id="learnNatural" class="btn btn-primary btn-custom">Learn More</button>
+            </div>
+          </div> -->
+          <div class="row">
+            <div class="col-md-12">
+              <img class="cyclePic" src="images/MainNatureGraphic_transp.png">
+            </div>
+          </div>
+        </div> <!-- end container -->
+      </div> <!-- end natural -->
+
+    <button type="button" id="learnNatural" class="btn btn-primary btn-custom">Learn More</button>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="css/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+    // animating the nav and flash up and down
+
+    $(document).ready(function() {
+       $('#natP2').hide();
+       $('#humP2').hide();
+    });
+
+    $('#learnNatural').on('click', function () {
+      $('#natural').toggleClass('half');
+      $('#natP2').toggle(); 
+    });
+    $('#learnHuman').on('click', function () {
+      $('#natural').toggleClass('slide');
+      $('#humP2').toggle(); 
+    });
+    </script>
   </body>

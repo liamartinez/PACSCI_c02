@@ -24,12 +24,15 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+
+
+
   </head>
   <body>
 
     <!-- sliding navbar -->
     <div class="container">
-      <div class="navbar navbar-inverse navbar-fixed-top bs-docs-nav slider" role="banner">
+      <div class="navbar navbar-custom navbar-fixed-top bs-docs-nav slider" role="banner">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -41,7 +44,7 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active" id="back"><a class="navbar-brand" href="#">Go Home</a></li>
-            <li><a href="#">The Carbon Cycle</a></li>
+            <li><a href="carbonCycle.html">The Carbon Cycle</a></li>
             <li><a href="CO2Monitoring.html">C02 Monitoring</a></li>
             <li><a href="live.html">Live Data From The Space Needle</a></li>
           </ul>
@@ -53,8 +56,8 @@
     <!-- buttons -->
     <div id="homeButtons">
       <div class="row" >
-        <button id="reveal" type="button" class="btn btn-primary" data-toggle="button">Learn More</button>
-         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modHelp">Help</button>
+        <button id="reveal" type="button" class="btn btn-primary btn-custom" data-toggle="button">Learn More</button>
+         <button type="button" class="btn btn-primary btn-custom" data-toggle="modal" data-target="#modHelp">Help</button>
       </div>
     </div>
 
@@ -120,6 +123,14 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Preloader -->
+    <script type="text/javascript">
+            $(window).load(function() { // makes sure the whole site is loaded
+                $('#status').fadeOut(); // will first fade out the loading animation
+                $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+                $('body').delay(350).css({'overflow':'visible'});
+            })
+    </script>
     <script src="css/bootstrap/js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
@@ -133,7 +144,10 @@
       $('.movingElements').toggleClass('open');
     });
     </script>
-
-
   </body>
+
+    <!-- Preloader -->
+  <div id="preloader">
+      <div id="status">&nbsp;</div>
+  </div>
 </html>
