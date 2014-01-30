@@ -13,18 +13,14 @@ from kuler theme: https://kuler.adobe.com/RemolinaEstrada-color-theme-3338205/ed
 	margin-top: 40px;
 }
 
-html {
-	overflow: hidden;
-}
-
 /*home*/
 .interactiveContent {
 	border: #999 solid 0px;
 /*	width: 1137px;100%;
 	height: 640px;*/
-	height:800px;
-	width: 1421px; 
-
+	height:100%;
+	width: auto; 
+	margin:-10px 0px;
 }
 
 .movingElements {
@@ -90,20 +86,6 @@ html {
   border-radius:2px; !important;
 }
 
-.well {
-	background: rgba(10, 145, 171, .8);
-}
-
-.panel-primary>.panel-heading {
-	background: rgba(10, 145, 171, 1);
-	border-color: rgba(10, 145, 171, 1);
-
-}
-
-.panel-body {
-background: rgba(10, 145, 171, .3);
-}
-
 /*carbon cycle*/
 
 .container {
@@ -115,36 +97,35 @@ background: rgba(10, 145, 171, .3);
 }
 
 #natural {
-	background: rgba(10, 145, 171, .8);
+	background: rgba(10, 145, 171, 1);
 	height:100%;
 	width: 100%;
 }
 
 .natureTitle {
+	background: rgba(10, 145, 171, 1);
 	margin-right: 50%;
 	margin-top: 20px;
 	border-radius: 4px;
-	margin-bottom: 20px;
 }
 
 #nature-title-text {
-	margin-left: 66px;
-	background: rgba(10, 145, 171, .8);
+	margin-left: 60px;
 }
 
 #human {
-	background: rgba(255,192,69, .9);
-	top:150px;
+	background-color: #FFC045;
+	width: 100%;
+	top:135px;
 	position: absolute;
 	z-index: -1;
 	height:100%;
-	width: 940px;
-	left: 50px;
 }
 
 .humanTitle {
+	background-color: #FFC045;
 	margin-top: 20px;
-	margin-left: 35%;
+	margin-left: 52%;
 	border-radius: 4px;
 	position: absolute;
 	width: 48%;
@@ -152,7 +133,6 @@ background: rgba(10, 145, 171, .3);
 
 #human-title-text {
 	margin-right: 60px;
-	background: rgba(255,192,69, .9);
 }
 
 #humanIcon {
@@ -167,7 +147,8 @@ background: rgba(10, 145, 171, .3);
 #natIcon {
 	width: 40px;
 	height:auto;
-	margin-left: 10px;
+	margin-top: 36px;
+	margin-left: 20px;
 }
 
 .cyclePic {
@@ -176,14 +157,6 @@ background: rgba(10, 145, 171, .3);
 	display: block;
 	margin-left: auto;
 	margin-right:auto;
-}
-
-#picNat {
-	margin-top: 50px;
-}
-
-#picHum {
-	margin-top: 15px;
 }
 
 /* Preloader */

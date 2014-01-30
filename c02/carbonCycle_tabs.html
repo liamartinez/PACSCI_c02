@@ -44,38 +44,40 @@
       </div>
     </div> <!-- /container -->
 
-      <div class="row humanTitle" >
-        <button type="button" class="btn btn-default btn-lg " id="human-title-text">The Human-Influenced<img id="natIcon" src="images/icon_fam.png"></button>
-      </div>
-
-
-      <div class="container" id="human">
-        
+    <div class=" row humanTitle">
+      <h3 class="pageTitle pull-right" id="human-title-text">The Human-Influenced Cycle</h3>
+    </div>
+    
+      <div id="human">
+        <div class="container">
           <div class="row cc-text">
             <div class="col-md-6">
-              <p "text-right">Since the Industrial Revolution, we have fueled our activities with carbon, burning fossil fuels in factories, vehicles and power plants. This burning releases carbon into the air much faster than occurs naturally. Once there, the carbon changes the chemical makeup of the atmosphere and oceans. </p>
+              <p "text-right">Since the Industrial Revolution, we have fueled our activities with carbon, burning fossil fuels in factories, vehicles and power plants. This burning releases carbon into the air much faster than occurs naturally. Once there, the carbon changes the chemical makeup of </p>
             </div>
             <div class="col-md-6">
-              <p >By digging up and burning fossil fuels, we're adding carbon to the atmosphere that would naturally be in storage. This steady increase in CO2 levels in the atmosphere changes the natural carbon cycle, which affects the global climate and the chemistry of the oceans. </p>
+              <p class ="text-right">By digging up and burning fossil fuels, we’re adding carbon to the atmosphere that would naturally be in storage. This steady increase in CO2 levels in the atmosphere changes the natural carbon cycle, which affects the global climate and the chemistry of the oceans. Once there, the carbon changes the chemical makeup of  </p>
             </div>  
           </div>
           <div class="row">
             <div class="col-md-12">
-              <img class="cyclePic" id="picHum" src="images/MainHumanGraphic_transp.png">
+              <img class="cyclePic" src="images/MainHumanGraphic_transp.png">
             </div>
           </div>
         </div> <!-- end container -->
-
+      </div> <!-- end human -->
 
         <div class="row natureTitle" >
-          <button type="button" class="btn btn-default btn-lg" id="nature-title-text">The Natural Carbon Cycle <img id="natIcon" src="images/icon_tree.png"></button>
+<!--             <div class="col-md-1">
+            <img id="natIcon" src="images/icon_tree.png">
+          </div> -->
+            <h3 class="pageTitle" id="nature-title-text" >The Natural Carbon Cycle</h3>
         </div>
 
-    <div class="container">
-      <div class="container" id="natural">
+      <div id="natural">
+        <div class="container">
           <div class="row cc-text" >
             <div class="col-md-6">
-            <p>People, animals and plants are made primarily of carbon. When living things breathe and whenever something burns, carbon is released into the atmosphere.</p>
+            <p>People, animals and plants are made primarily of carbon. When living things breathe and whenever something burns, carbon is released into the atmosphere.People, animals and plants are made primarily of carbon. When living things breathe and whenever something burns, carbon is released into the atmosphere.</p>
             </div>
             <div class="col-md-6">
             <p >When living things die and decay, carbon is released and joins carbon stored in the soil and oceans. Vast amounts of carbon are in deep storage in the form of fossilized plants and animals.</p>
@@ -83,7 +85,7 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-            <img class="cyclePic" id="picNat"src="images/MainNatureGraphic_transp.png">
+            <img class="cyclePic" src="images/MainNatureGraphic_transp.png">
             </div>
           </div>
         </div> 
@@ -96,22 +98,7 @@
     <script src="css/bootstrap/js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
-      $(document).ready(function() {
-      $('#natural').show();
-      $('#human').hide();
-      });
-
-    $('#human-title-text').on('click', function () {
-      $('#human').show();
-      $('#natural').hide();  
-      console.log ("human");
-    }); 
-
-    $('#nature-title-text').on('click', function () {
-      $('#human').hide();
-      $('#natural').show(); 
-      console.log ("nature"); 
-    }); 
+    // animating the nav and flash up and down
 
     </script>
   </body>
